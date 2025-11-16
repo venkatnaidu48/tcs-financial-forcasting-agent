@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS tcs_forecasts;
+USE tcs_forecasts;
+
+CREATE TABLE IF NOT EXISTS request_logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  request_id VARCHAR(64) NOT NULL,
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+  input_query TEXT,
+  response_json LONGTEXT
+);
+
+CREATE TABLE IF NOT EXISTS raw_documents (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  source VARCHAR(255),
+  url TEXT,
+  filename VARCHAR(255),
+  content LONGTEXT,
+  fetched_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
