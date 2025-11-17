@@ -29,3 +29,11 @@ A concise prompt instructs the LLM to synthesize the numeric and qualitative con
    ```bash
    git clone https://github.com/venkatnaidu4/tcs-financial-forecasting-agent.git
    cd tcs-financial-forecasting-agent
+
+
+## Steps for execution
+step1: extract the files
+step2: create the python environment(venv)
+step3: install the requirements.txt
+step4: python -m uvicorn app.main:app --reload --port 8000
+step5: http://127.0.0.1:8000 or http://127.0.0.1:8000/docs [docs add manually in the browser]
