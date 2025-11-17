@@ -36,4 +36,4 @@ step1: extract the files
 step2: create the python environment(venv)
 step3: install the requirements.txt
 step4: python -m uvicorn app.main:app --reload --port 8000
-step5: http://127.0.0.1:8000 or http://127.0.0.1:8000/docs [docs add manually in the browser]
+step5: http://127.0.0.1:8000 or http://127.0.0.1:8000/docs [docs add manually in the browser] or http://127.0.0.1:8000/forecast [forecast add manually]
